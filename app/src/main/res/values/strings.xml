@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">NXAppC</string>
+    <string name="input_error">Introduzca el valor solicitado arriba</string>
+    <string name="appbar_text">Tienda BEDU</string>
+    <string name="appbar_search_icon">Ícono de búsqueda</string>
+    <string name="appbar_info_button">Ícono de información adicional</string>
+    <string name="user_input_field">Caja de texto para $label</string>
+    <string name="bottombar_main_icon">Inicio</string>
+    <string name="bottombar_cart_icon">Carrito</string>
+    <string name="bottombar_profile_icon">Perfil</string>
+    <string name="login_shop_icon">Logo de la tienda BEDU</string>
+    <string name="login_shop_title">Tienda BEDU</string>
+    <string name="input_user_label">Usuario</string>
+    <string name="input_password_label">Contraseña</string>
+    <string name="input_email_label">Correo</string>
+    <string name="input_name_label">Nombre</string>
+    <string name="input_phone_label">Teléfono</string>
+    <string name="login_button">Ingresar</string>
+    <string name="signin_button">Registrarse</string>
+    <string name="product_detail_new">Nuevo</string>
+    <string name="product_detail_paypermonth">6 meses sin intereses por $price $/mes</string>
+    <string name="product_detail_car_icon">Ícono de un automóvil</string>
+    <string name="product_detail_location_icon">Ícono de locación</string>
+    <string name="product_detail_car_text">Entrega mañana</string>
+    <string name="product_detail_location_text">Disponible para tu locación</string>
+    <string name="product_detail_addtocart_button">Agregar al carrito</string>
+    <string name="product_detail_description_text">Descripción</string>
+    <string name="shopping_cart_empty_text">No hay objetos todavía, ¡agrega algunos y vuelve pronto!</string>
+    <string name="signin_shop_title">Registrarse</string>
+    <string name="signin_googlesignin_text">Ingresar con Google</string>
+    <string name="rating_icon_filled">Un ícono lleno de estrella</string>
+    <string name="rating_icon_outlined">Un ícono vacío de estrella</string>
+    <string name="disabled_search">La búsqueda no está habilitada todavía</string>
+</resources>
