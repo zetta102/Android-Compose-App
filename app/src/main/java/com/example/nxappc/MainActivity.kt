@@ -22,6 +22,7 @@ class MainActivity : ComponentActivity() {
 }
 
 
+@ExperimentalCoilApi
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
