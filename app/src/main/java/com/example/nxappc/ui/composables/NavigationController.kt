@@ -1,20 +1,22 @@
 package com.example.nxappc.ui.composables
 
+import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.runtime.Composable
-import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import androidx.navigation.compose.rememberNavController
 import coil.annotation.ExperimentalCoilApi
 import com.example.nxappc.ui.objects.Routes
 import com.example.nxappc.ui.state.ProductModel
 import com.example.nxappc.ui.views.*
+import com.google.accompanist.navigation.animation.AnimatedNavHost
+import com.google.accompanist.navigation.animation.rememberAnimatedNavController
 
+@ExperimentalAnimationApi
 @ExperimentalCoilApi
 @Composable
 fun NavigationController() {
-    val navController = rememberNavController()
+    val navController = rememberAnimatedNavController()
     val productModel = ProductModel()
-    NavHost(navController = navController, startDestination = Routes.Login.toString()) {
+    AnimatedNavHost(navController = navController, startDestination = Routes.Login.toString()) {
         composable(route = Routes.Login.toString()) {
             LoginMenu(
                 navRegData = { navController.navigate(Routes.Signin.toString()) },
