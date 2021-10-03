@@ -64,6 +64,8 @@ fun BottomNavigationBar(
                 label = {
                     if (currentDestination?.hierarchy?.any { it.route == view.third } == true) {
                         Text(views[index].first)
+                    } else {
+                        Text(text = "")
                     }
                 })
         }

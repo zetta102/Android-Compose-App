@@ -21,7 +21,6 @@ import androidx.navigation.NavController
 import coil.annotation.ExperimentalCoilApi
 import coil.compose.rememberImagePainter
 import com.example.nxappc.R
-import com.example.nxappc.ui.composables.BottomNavigationBar
 import com.example.nxappc.ui.composables.RatingGenerator
 import com.example.nxappc.ui.composables.TopAppBar
 import com.example.nxappc.ui.objects.Routes
@@ -39,8 +38,7 @@ fun ProductDetail(
     val productPerMonth = (product.price / 6).roundToInt()
     val ratingNumber = (1..1000).random()
     Scaffold(
-        topBar = { TopAppBar() },
-        bottomBar = { BottomNavigationBar(navController = navController) }
+        topBar = { TopAppBar() }
     ) {
         Column(
             modifier = Modifier
