@@ -1,4 +1,4 @@
-package com.example.nxappc.ui.composables
+package com.example.nxappc.ui.composables.layout
 
 import androidx.compose.material.BottomNavigation
 import androidx.compose.material.BottomNavigationItem
@@ -17,7 +17,7 @@ import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.compose.currentBackStackEntryAsState
 import com.example.nxappc.R
-import com.example.nxappc.ui.objects.Routes
+import com.example.nxappc.domain.misc.Routes
 
 @Composable
 fun BottomNavigationBar(
@@ -62,11 +62,11 @@ fun BottomNavigationBar(
                     )
                 },
                 label = {
-                    if (currentDestination?.hierarchy?.any { it.route == view.third } == true) {
-                        Text(views[index].first)
+                    Text(text = if (currentDestination?.hierarchy?.any { it.route == view.third } == true) {
+                        views[index].first
                     } else {
-                        Text(text = "")
-                    }
+                        ""
+                    })
                 })
         }
     }

@@ -1,6 +1,11 @@
-package com.example.nxappc.ui.objects
+package com.example.nxappc.domain.database.entities
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "products")
 data class Product(
+    @PrimaryKey
     val id: Int,
     val title: String,
     val price: Double,

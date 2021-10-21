@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">NXAppC</string>
+    <string name="app_name" translatable="false">BEDU ComShop</string>
     <string name="input_error">Introduzca el valor solicitado arriba</string>
     <string name="appbar_text">Tienda BEDU</string>
     <string name="appbar_search_icon">Ícono de búsqueda</string>
     <string name="appbar_info_button">Ícono de información adicional</string>
-    <string name="user_input_field">Caja de texto para $label</string>
+    <string name="user_input_field">Caja de texto para %1$s</string>
     <string name="bottombar_main_icon">Inicio</string>
     <string name="bottombar_cart_icon">Carrito</string>
     <string name="bottombar_profile_icon">Perfil</string>
@@ -16,12 +16,12 @@
     <string name="input_email_label">Correo</string>
     <string name="input_name_label">Nombre</string>
     <string name="input_phone_label">Teléfono</string>
-    <string name="login_button">Ingresar</string>
+    <string name="login_button">Iniciar Sesión</string>
     <string name="signin_button">Registrarse</string>
     <string name="product_detail_new">Nuevo</string>
-    <string name="product_detail_paypermonth">6 meses sin intereses por $price $/mes</string>
+    <string name="product_detail_paypermonth">6 meses sin intereses por %1$s $/mes</string>
     <string name="product_detail_car_icon">Ícono de un automóvil</string>
-    <string name="product_detail_location_icon">Ícono de locación</string>
+    <string name="product_detail_location_icon">Ícono de ubicación</string>
     <string name="product_detail_car_text">Entrega mañana</string>
     <string name="product_detail_location_text">Disponible para tu locación</string>
     <string name="product_detail_addtocart_button">Agregar al carrito</string>
@@ -32,4 +32,33 @@
     <string name="rating_icon_filled">Un ícono lleno de estrella</string>
     <string name="rating_icon_outlined">Un ícono vacío de estrella</string>
     <string name="disabled_search">La búsqueda no está habilitada todavía</string>
+    <string name="user_profile_locations">Mis Direcciones</string>
+    <string name="user_profile_payment_methods">Métodos de Pago</string>
+    <string name="user_profile_orders">Pedidos</string>
+    <string name="user_profile_notifications">Notificaciones</string>
+    <string name="user_profile_change_password">Cambiar Contraseña</string>
+    <string name="logout_button">Cerrar Sesión</string>
+    <string name="permissions_not_available">Permisos de ubicación no disponibles. Por favor, acéptelos para que la aplicación pueda funcionar.</string>
+    <string name="feature_not_available">Característica no disponible</string>
+    <string name="permissions_not_granted">La ubicación es importante para esta aplicación. Por favor, otorgue el permiso.</string>
+    <string name="dialog_yes">¡Sí!</string>
+    <string name="dialog_no">¡No!</string>
+    <string name="finished_payment_icon">Ícono de cajita</string>
+    <string name="finished_payment_thanks">¡Gracias por su orden!</string>
+    <string name="finished_payment_clarification">Estará recibiendo pronto su pedido</string>
+    <string name="finished_payment_menu">Ir al menú principal</string>
+    <string name="payment_data_current">Datos de pago</string>
+    <string name="payment_data_address">Ubicación actual</string>
+    <string name="payment_data_method">Método de pago actual</string>
+    <string name="payment_data_overview">Resumen del pago</string>
+    <string name="payment_data_subtotal">Subtotal</string>
+    <string name="payment_data_delivery">Envío</string>
+    <string name="payment_data_total">Total</string>
+    <string name="payment_pay_button">Pagar</string>
+    <string name="shopping_cart_creditcard_icon">Ícono de tarjeta de crédito</string>
+    <string name="user_profile_logout_icon">Ícono de cerrar sesión</string>
+    <string name="notification_builder_title" translatable="false">BEDU ComShop</string>
+    <string name="notification_builder_content">Compra realizada, su pedido llegará en una semana</string>
+    <string name="user_profile_location_icon">Ícono de ubicación</string>
+    <string name="user_profile_location_button">Actualizar ubicación</string>
 </resources>

@@ -1,11 +1,11 @@
-package com.example.nxappc.ui.composables
+package com.example.nxappc.ui.composables.helpers
 
 import androidx.compose.material.Icon
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Star
+import androidx.compose.material.icons.outlined.Star
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import com.example.nxappc.R
 
@@ -21,7 +21,7 @@ fun RatingGenerator() {
     }
     for (i in number until 5) {
         Icon(
-            painterResource(id = R.drawable.ic_baseline_star_outline_24),
+            Icons.Outlined.Star,
             contentDescription = stringResource(id = R.string.rating_icon_outlined),
             tint = MaterialTheme.colors.secondary
         )

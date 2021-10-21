@@ -1,4 +1,4 @@
-package com.example.nxappc.ui.views
+package com.example.nxappc.ui.views.premenu
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
@@ -18,8 +18,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.nxappc.R
-import com.example.nxappc.ui.composables.ErrorInput
-import com.example.nxappc.ui.composables.UserField
+import com.example.nxappc.ui.composables.helpers.UserField
 import com.example.nxappc.ui.theme.Shapes
 
 @Composable
@@ -67,7 +66,6 @@ fun LoginMenu(navRegData: () -> Unit, navMenuData: () -> Unit) {
             isPrivate = false,
             isError = usrBoxError
         )
-        ErrorInput(isError = usrBoxError)
         UserField(
             value = pwdBox,
             onValueChange = {
@@ -85,7 +83,6 @@ fun LoginMenu(navRegData: () -> Unit, navMenuData: () -> Unit) {
             isPrivate = true,
             isError = pwdBoxError
         )
-        ErrorInput(isError = pwdBoxError)
         Button(
             onClick = navMenuData,
             content = { Text(text = stringResource(id = R.string.login_button)) },

@@ -1,6 +1,7 @@
-package com.example.nxappc.ui.composables
+package com.example.nxappc.ui.composables.helpers
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Card
 import androidx.compose.material.MaterialTheme
@@ -14,15 +15,19 @@ import coil.compose.rememberImagePainter
 
 @ExperimentalCoilApi
 @Composable
-fun CartCard(
+fun ProductCard(
     title: String,
     price: Double,
-    image: String
+    image: String,
+    onCardClick: () -> Unit
 ) {
+    val ratingNumber = (1..1000).random()
     Row {
         Card(
-            modifier = Modifier
-                .fillMaxWidth(),
+            modifier =
+            Modifier
+                .fillMaxWidth()
+                .clickable(onClick = onCardClick),
             backgroundColor = MaterialTheme.colors.background
         ) {
             Row {
@@ -41,9 +46,14 @@ fun CartCard(
                     Text(text = "$${price}")
                     Row {
                         run { RatingGenerator() }
+                        Text(
+                            text = ratingNumber.toString(),
+                            modifier = Modifier.padding(start = 12.dp)
+                        )
                     }
                 }
             }
         }
     }
 }
+

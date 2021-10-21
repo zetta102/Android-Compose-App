@@ -1,10 +1,14 @@
-package com.example.nxappc.ui.composables
+package com.example.nxappc.ui.composables.helpers
 
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.slideInVertically
+import androidx.compose.animation.slideOutVertically
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.rememberVectorPainter
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 import com.example.nxappc.R
@@ -35,4 +39,13 @@ fun UserField(
         isError = isError,
         colors = TextFieldDefaults.outlinedTextFieldColors(textColor = MaterialTheme.colors.onPrimary)
     )
+    AnimatedVisibility(
+        visible = isError,
+        enter = slideInVertically { -it },
+        exit = slideOutVertically { -it }) {
+        Text(
+            text = stringResource(R.string.input_error),
+            style = TextStyle(color = MaterialTheme.colors.onPrimary)
+        )
+    }
 }

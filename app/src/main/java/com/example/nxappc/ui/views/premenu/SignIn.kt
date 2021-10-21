@@ -1,4 +1,4 @@
-package com.example.nxappc.ui.views
+package com.example.nxappc.ui.views.premenu
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -22,8 +22,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.nxappc.R
-import com.example.nxappc.ui.composables.ErrorInput
-import com.example.nxappc.ui.composables.UserField
+import com.example.nxappc.ui.composables.helpers.UserField
 import com.example.nxappc.ui.theme.Shapes
 
 @Composable
@@ -74,7 +73,6 @@ fun RegistrationMenu(navMenuData: () -> Unit) {
             isPrivate = false,
             isError = nameBoxError
         )
-        ErrorInput(isError = nameBoxError)
         UserField(
             value = emailBox,
             onValueChange = {
@@ -92,7 +90,6 @@ fun RegistrationMenu(navMenuData: () -> Unit) {
             isPrivate = false,
             isError = emailBoxError
         )
-        ErrorInput(isError = emailBoxError)
         UserField(
             value = phoneBox,
             onValueChange = {
@@ -110,7 +107,6 @@ fun RegistrationMenu(navMenuData: () -> Unit) {
             isPrivate = false,
             isError = phoneBoxError
         )
-        ErrorInput(isError = phoneBoxError)
         UserField(
             value = pwdBox,
             onValueChange = {
@@ -128,7 +124,6 @@ fun RegistrationMenu(navMenuData: () -> Unit) {
             isPrivate = true,
             isError = pwdBoxError
         )
-        ErrorInput(isError = pwdBoxError)
         Button(
             onClick = navMenuData,
             content = { Text(text = stringResource(id = R.string.signin_button)) },

@@ -1,4 +1,4 @@
-package com.example.nxappc.ui.composables
+package com.example.nxappc.ui.composables.layout
 
 import android.content.Intent
 import android.net.Uri
